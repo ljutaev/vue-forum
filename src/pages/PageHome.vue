@@ -1,13 +1,13 @@
 <template>
-  <div>
+  <div class="col-full">
     <h1>Welcome to the forum</h1>
-    <ThreadList :threads="objec"/>
+    <ThreadList :threads="threads"/>
   </div>
 </template>
 
 <script>
   import sourceData from '@/data'
-  import ThreadList from './ThreadList'
+  import ThreadList from '@/components/ThreadList'
   export default {
     name: 'HelloWorld',
     components: {

@@ -30,8 +30,8 @@
 
 <script>
   import sourceData from '@/data'
-  console.log(sourceData)
   export default {
+    name: 'ThreadShow',
     props: {
       id: {
         required: true,

@@ -1,7 +1,8 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import HelloWorld from '@/components/HelloWorld'
-import ThreadShow from '@/components/ThreadShow'
+import Home from '@/pages/PageHome'
+import ThreadShow from '@/pages/PageThreadShow'
+import NotFound from '@/pages/PageNotFound'
 
 Vue.use(Router)
 
@@ -9,8 +10,8 @@ export default new Router({
   routes: [
     {
       path: '/',
-      name: 'Hello',
-      component: HelloWorld
+      name: 'Home',
+      component: Home
     },
     {
       path: '/thread/:id',
@@ -18,6 +19,11 @@ export default new Router({
       component: ThreadShow,
       props: true
     },
+    {
+      path: '*',
+      name: 'NotFound',
+      component: NotFound,
+    }
   ],
   mode: 'history'
 })

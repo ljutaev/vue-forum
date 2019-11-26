@@ -11,12 +11,10 @@
 
 <script>
   import ThreadListItem from './ThreadListItem'
-  
   export default {
     components: {
       ThreadListItem
     },
-
     props: {
       threads: {
         required: true,
